@@ -1,0 +1,400 @@
+:root{
+  --gradient: linear-gradient(
+    43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%
+
+  )
+  
+}
+
+
+body{
+  margin: 0;
+  background: #222;
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+
+  
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: rgb(51, 51, 51); 
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(20, 20, 20); 
+}
+
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+header{
+  background: #802EB3;
+  background-image: var(--gradient);
+  background-size: 170%;
+  animation: bg-anim 4s infinite alternate;
+}
+
+@keyframes bg-anim {
+  0% {background-position: left;}
+  100%{background-position: right;}
+}
+
+header::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.svg{
+  padding: 40px 0;
+  width: 3%;
+  height: 3%;
+  color: aliceblue;
+  float: left;
+}
+.svgHeart{
+  position: relative;
+  width: 5%;
+  height: 5%;
+  color: aliceblue;
+  top: -175px;
+  left: 550px;
+}
+nav{
+  float: right  ;
+}
+
+nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 200px;
+  padding-top: 45px;
+
+  position: relative;
+
+  left: -35px;
+}
+
+nav a{
+  color: aliceblue;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 120%;
+}
+
+nav a:hover{
+  transition: all ease-in-out 250ms;
+  text-shadow: 0 0 25px rgb(251, 253, 255);
+}
+
+nav a::before{
+  content: "";
+  display: block;
+  height: 5px;
+  width: 100%;
+  background-color: aliceblue;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before{
+  width: 100%;
+}
+.contentHeader{
+  position: relative;
+  margin: 3% 40%;
+  color: aliceblue;
+  font-size: 700%; 
+  left: 100px;
+  width: 100%;
+  height: 100%;
+}
+.contentHeaderObese{
+  position: relative;
+  margin: 3% 40%;
+  color: aliceblue;
+  font-size: 700%; 
+  left: -73px;
+  width: 100%;
+  height: 100%;
+}
+.contentHeaderPoverty{
+  position: relative;
+  margin: 3% 40%;
+  color: aliceblue;
+  font-size: 700%; 
+  left: -750px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.contentFooterObese{
+  position: relative;
+  color: rgb(154, 158, 160);
+  font-size: 150%; 
+  left: 850px;
+  top: -190px;
+  width: 100%;
+  height: 100%;
+}
+.contentFooterPoverty{
+  position: relative;
+  color: rgb(154, 158, 160);
+  font-size: 150%; 
+  left: 700px;
+  top: -180px;
+  width: 100%;
+  height: 100%;
+}
+
+.graphFooterObeseSource{
+  position: absolute;
+  color: rgb(154, 158, 160);
+  font-size: 150%; 
+  left: 550px;
+  top: 1370px;
+  width: 100%;
+  height: 100%;
+  text-decoration: underline;
+}
+.graphFooterPovertySource{
+  position: absolute;
+  color: rgb(154, 158, 160);
+  font-size: 150%; 
+  left: 550px;
+  top: 1520px;
+  width: 100%;
+  height: 100%;
+  text-decoration: underline;
+}
+
+.contentPar{
+  color: aliceblue;
+  width: 50%;
+  height: 50%;  
+  margin: auto 23%;
+
+}
+@keyframes fir-textFloat{
+  from{top: 0px;}
+  to{top: 10px;}
+}
+@keyframes sec-textFloat{
+  from{top: 100px;}
+  to{top: 125px;}
+}
+@keyframes thir-textFloat{
+  from{top: 25px;}
+  to{top: 40px;}
+}
+@keyframes four-textFloat{
+  from{top: -100px;}
+  to{top: -90px;}
+}
+@keyframes fiv-textFloat{
+  from{top: 200px;}
+  to{top: 215px;}
+}
+@keyframes six-textFloat{
+  from{top: 250px;}
+  to{top: 180px;}
+}
+.fir{
+  position: relative;
+  color: aliceblue;
+  width: 50%;
+  height: 50%;  
+  margin: auto 23%;
+  font-size: 150%;
+  left: 50px;
+  top: 0px;
+  animation: fir-textFloat 4s infinite alternate;
+  text-shadow: 0 0 25px rgb(251, 253, 255);
+  transition: 750ms;
+}
+.sec{
+  position: relative;
+  color: aliceblue;
+  width: 50%;
+  height: 50%;  
+  margin: auto 23%;
+  left: 100px;
+  top: 100px;
+  font-size: 150%;
+  animation: sec-textFloat 2s infinite alternate;
+  text-shadow: 0 0 25px rgb(251, 253, 255);
+  transition: 350ms;
+}
+.thir{
+  position: relative;
+  color: aliceblue;
+  width: 50%;
+  height: 50%;  
+  margin: auto 23%;
+  left: 550px;
+  top: 25px;
+  font-size: 150%;
+  animation: thir-textFloat 1.5s infinite alternate;
+  text-shadow: 0 0 25px rgb(251, 253, 255);
+  transition: 500ms;
+}
+.four{
+  position: relative;
+  color: aliceblue;
+  width: 50%;
+  height: 50%;  
+  margin: auto 23%;
+  left: 700px;
+  top: -100px;
+  font-size: 150%;
+  text-shadow: 0 0 25px rgb(251, 253, 255);
+  animation: four-textFloat 1.8s infinite alternate;
+  transition: 250ms;
+}
+.fiv{
+  position: relative;
+  color: aliceblue;
+  width: 50%;
+  height: 50%;  
+  margin: auto 23%;
+  left: 600px;
+  top: 200px;
+  font-size: 150%;
+  text-shadow: 0 0 25px rgb(251, 253, 255);
+  animation: fiv-textFloat 2.2s infinite alternate;
+  transition: 750ms;
+  
+}
+.six{
+  position: relative;
+  color: aliceblue;
+  width: 50%;
+  height: 50%;  
+  margin: auto 23%;
+  left: -100px;
+  top: 250px;
+  font-size: 150%;
+  text-shadow: 0 0 25px rgb(251, 253, 255);
+  animation: six-textFloat 2.5s infinite alternate;
+  transition: 500ms;
+  
+}
+.aboutText{
+  position: relative;
+  color: aliceblue;
+  width: 50%;
+  height: 50%;  
+  font-size: 250%;
+  left: 475px;
+  top: 350px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+
+
+.obesePercentage{
+  position: relative;
+  color: aliceblue;  
+  font-size: 250%;
+  left: -1400px;
+  top: -130px;
+  text-align: right;
+}
+.obesePercentageNumber{
+  position: relative;
+  color: aliceblue;  
+  font-size: 250%;
+  left: 995px;
+  top: -1111px;
+  text-align: left;
+  text-shadow: 0 0 25px rgb(251, 253, 255);
+}
+
+.quoteObese{
+  position: absolute;
+  color: aliceblue;  
+  font-size: 250%;
+  left: 1300px;
+  top: 750px;
+  text-align: right;
+  width: 30%;
+  height: 35%;
+  
+}
+
+.btnLangTR{
+  position: relative;
+  left: 35%;
+  bottom: -275px; 
+  width: 30%;
+  height: 80px;
+  border-radius: 8px;
+  background-image: var(--gradient);
+  background-size: 200%;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 120%;
+  color: aliceblue;
+  border: none;
+  background-position: left;
+  transition: all 250ms;
+  
+  
+}
+.btnLangEN{
+  position: relative;
+  left: 5%;
+  bottom: -425px; 
+  width: 30%;
+  height: 80px;
+  border-radius: 8px;
+  background-image: var(--gradient);
+  background-size: 200%;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 120%;
+  color: aliceblue;
+  border: none;
+  background-position: left;
+  transition: all 250ms;
+  
+}
+
+.btnLangTR:hover{background-position: right;}
+.btnLangTR:focus{outline: none; text-shadow: 0 0 25px rgb(251, 253, 255);}
+.btnLangEN:hover{background-position: right;}
+.btnLangEN:focus{outline: none; text-shadow: 0 0 25px rgb(251, 253, 255);}
+
+
+.progressBar{
+  position: relative;
+  background-color: aliceblue;
+  background-image: var(--gradient);
+  background-position: left;
+  background-size:  170%;
+  margin-bottom: 39px;
+  width: 1000px;
+  height: 50px;
+  top: -2090px;
+  left: 555px;
+  border-radius: 8px;
+  z-index: -1;
+  transition: all 250ms;
+}
+
+.progressBar:hover{
+  background-position: right;
+}
