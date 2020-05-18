@@ -1,3 +1,4 @@
+
 :root{
   --gradient: linear-gradient(
     43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%
@@ -60,10 +61,10 @@ header::after{
   height: 5%;
   color: aliceblue;
   top: -175px;
-  left: 550px;
+  left: 500px;
 }
 nav{
-  float: right  ;
+  float: none  ;
 }
 
 nav ul{
@@ -116,7 +117,7 @@ nav a:hover::before{
   margin: 3% 40%;
   color: aliceblue;
   font-size: 700%; 
-  left: 100px;
+  left: 5%;
   width: 100%;
   height: 100%;
 }
@@ -187,6 +188,7 @@ nav a:hover::before{
   margin: auto 23%;
 
 }
+
 @keyframes fir-textFloat{
   from{top: 0px;}
   to{top: 10px;}
@@ -216,10 +218,9 @@ nav a:hover::before{
   color: aliceblue;
   width: 50%;
   height: 50%;  
-  margin: auto 23%;
   font-size: 150%;
-  left: 50px;
-  top: 0px;
+  left: 20%;
+  top: 0%;
   animation: fir-textFloat 4s infinite alternate;
   text-shadow: 0 0 25px rgb(251, 253, 255);
   transition: 750ms;
@@ -229,9 +230,8 @@ nav a:hover::before{
   color: aliceblue;
   width: 50%;
   height: 50%;  
-  margin: auto 23%;
-  left: 100px;
-  top: 100px;
+  left: 27%;
+  top: 0%;
   font-size: 150%;
   animation: sec-textFloat 2s infinite alternate;
   text-shadow: 0 0 25px rgb(251, 253, 255);
@@ -317,7 +317,7 @@ nav a:hover::before{
   position: relative;
   color: aliceblue;  
   font-size: 250%;
-  left: 995px;
+  left: 1550px;
   top: -1111px;
   text-align: left;
   text-shadow: 0 0 25px rgb(251, 253, 255);
@@ -327,12 +327,32 @@ nav a:hover::before{
   position: absolute;
   color: aliceblue;  
   font-size: 250%;
-  left: 1300px;
-  top: 750px;
-  text-align: right;
+  left: 35%;
+  bottom: -110%;
+  text-align: center;
   width: 30%;
   height: 35%;
   
+}
+.quoteObese2{
+  position: absolute;
+  color: aliceblue;  
+  font-size: 250%;
+  left: 35%;
+  bottom: -170%;
+  text-align: center;
+  width: 30%;
+  height: 35%;
+}
+.quoteObese3{
+  position: absolute;
+  color: aliceblue;  
+  font-size: 250%;
+  left: 35%;
+  bottom: -230%;
+  text-align: center;
+  width: 30%;
+  height: 35%;
 }
 
 .btnLangTR{
@@ -397,4 +417,57 @@ nav a:hover::before{
 
 .progressBar:hover{
   background-position: right;
+}
+
+.btnMusic{
+  position: absolute;
+  left: 92%;
+  top: 1.8%; 
+  width: 5%;
+  height: 80px;
+  border-radius: 20px;
+  background: #222;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 120%;
+  color: aliceblue;
+  border: none;
+  background-position: left;
+  transition: all 250ms;
+  
+}
+
+.btnMusic:focus{outline: none; text-shadow: 0 0 25px rgb(251, 253, 255);}
+
+.contentHeaderPoverty2{
+  position: relative;
+  margin: 3% 40%;
+  color: aliceblue;
+  font-size: 700%; 
+  left: -750px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  top: -120px;
+}
+
+.graphFooterWorkSource{
+  position: absolute;
+  color: rgb(154, 158, 160);
+  font-size: 150%; 
+  left: 550px;
+  top: 1000px;
+  width: 100%;
+  height: 100%;
+  text-decoration: underline;
+}
+
+.contentFooterDisclaimer{
+  position: relative;
+  color: rgb(154, 158, 160);
+  font-size: 150%; 
+  left: 570px;
+  top: 450px;
+  width: 100%;
+  height: 100%;
 }
